@@ -4,5 +4,16 @@
     },
     "updateContentCommand": "npm install",
     "postAttachCommand": "npm start",
-    "remoteUser": "node"
+    "remoteUser": "node",
+
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [3000],
+    "portsAttributes": {
+        "3000": {
+            // Use 'label' to provide a friendly name for the port that will appear in the Remote Explorer.
+            "label": "React App",
+            // Use 'onAutoForward' to automatically open a preview of the port when the container attaches.
+            "onAutoForward": "openPreview"
+        }
+    }
 }
