@@ -1,1 +1,1 @@
-FROM mrc.microsoft.com/vscode/devcontainers/javascript-node:latest
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node
